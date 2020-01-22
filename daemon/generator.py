@@ -5,6 +5,11 @@ import os
 import sys
 import configparser
 
+"""
+This generator applet calls the generator for a directory.
+"""
+
+# CONFIG_FILE_NAME is defined on mutiple files
 CONFIG_FILE_NAME = 'yurisora.ini'
 
 #chdir to the root and then run command.
@@ -28,7 +33,7 @@ def useconf(path):
         try:
             config = configparser.ConfigParser()
             config.read(CONFIG_FILE_NAME)
-            command = config['common']['generator']
+            command = config['generator']['generator']
         except:
             return 'Error: Bad Config'
         
