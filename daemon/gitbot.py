@@ -15,7 +15,7 @@ This gitbot script attempts to submit all changes to a directory.
 CONFIG_FILE_NAME = 'yurisora.ini'
 
 
-def gitsubmit(path, commitmessage = 'No commit message'):
+def gitsubmit(path, commitmessage = 'Automated commit'):
     pathbefore = os.getcwd()
     os.chdir(path)
     returnmsg = os.popen("git add .").read()
