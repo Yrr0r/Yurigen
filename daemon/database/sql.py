@@ -5,7 +5,7 @@ import sqlite3
 import atexit
 import os,sys
 
-DB_FILE = 'pass.db'
+DB_FILE = '/home/yrr0r_g/pass.db'
 
 conn = sqlite3.connect(DB_FILE, uri=True)
 
